@@ -1,12 +1,14 @@
 h1 {
     font-family: Verdana;
     font-size: 115px;
+    position: relative;
 }
 
 h2 {
     font-family: Courier New;
     color: white;
     font-size: 20px;
+    position: relative;
 }
 
 h3 {
@@ -21,7 +23,7 @@ li {
 }
 
 .atmosphere {
-    margin-left:190px;
+    margin-left: 190px;
     mask-image: linear-gradient(to right, transparent 25%, black);
     position: absolute;
     z-index: 0;
@@ -35,13 +37,19 @@ body {
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 10px;
+    padding: 10px;
     font-weight: bold;
-    font-size: 25px;
-    transition: color 0.25s;
+    font-size: 1.5rem; 
+    transition: all 0.5s;
+    position: relative;
 }
-
-a::after {
+.navbar{
+    transition: 0.5s;
+}
+.navbar:hover a{
+    color:black;
+}
+.navbar::after {
     position: absolute;
     content: "";
     inset: 0;
@@ -50,14 +58,14 @@ a::after {
     z-index: -1;
     transition: 0.45s;
 }
-a:hover {
-    color: black;
+
+.navbar a:hover {
+    font-size: 1.7rem;
 }
 
-a:hover::after {
+.navbar:hover::after {
     scale: 1 1;
 }
-
 
 .navbar {
     background-color: #34495e;
@@ -71,18 +79,20 @@ a:hover::after {
     top: 0px;
 }
 
-
-
 header {
     background-color: transparent;
     color: white;
+    padding-bottom: 100px;
+}
+
+header h1, header h2{
+    margin-left:1rem;
 }
 
 .about {
     background-color: white;
     position: relative;
     top: 150px;
-    width: 100%;
     font-size: 20px;
     font-family: Courier New;
     color: black;
@@ -94,33 +104,37 @@ header {
     Font-family: Verdana;
     font-size: 30px;
     color: black;
-    padding-left: 200px;
-    padding-right:400px;
-  
+
+}
+
+.main{
+    display:flex;
+    justify-content: left;
+    flex-direction: column;
+}
+.about, .contact, .projects {
+    text-align: left;
+    padding-left:100px;
+}
+
+.about p, .contact p, .projects p{
+    max-width:70%;
 }
 
 .about li {
     font-size: 20px;
     color: black;
-    padding-left: 25px;
-    padding-right:400px;
 }
 
 .about ul {
     color: black;
-    padding-left: 300px;
-    padding-right:400px;
 }
 
 .about p {
     color: black;
-    padding-left: 200px;
-    padding-right:400px;
     display: block;
     line-height: 1.5;
 }
-
-
 
 .projects {
     text-align: left;
@@ -135,29 +149,32 @@ header {
     Font-family: Verdana;
     font-size: 30px;
     color: white;
-    padding-left: 200px;
-    padding-right:400px;
 }
 
 .projects p {
     color: white;
-    padding-left: 200px;
-    padding-right:400px;
     display: block;
     line-height: 1.5;
     font-size: 20px;
     font-family: Courier New;
 }
 
-.loading {
-    padding-top: 100px;
-    padding-left: 600px;
+.loading-container {
+   width:100%;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.loading{
+    object-fit: contain;
 }
 
 .headername {
     color: white; 
-    font-size: 150px;
     animation: text 5s 1;
+    transition: all 0.5s;
+    max-width: 100%;
 }
 
 @keyframes text {
@@ -176,8 +193,6 @@ footer {
 .contact {
     color: white;
     background-color: transparent;
-    margin-left: 200px;
-    margin-right: 400px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -207,7 +222,6 @@ footer {
     position: relative;
     top: 90px;
 }
-
 
 .headerbottom {
     position: relative;
