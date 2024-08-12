@@ -295,11 +295,11 @@ footer {
     }
  }
 
- @media (max-width:481px) {
+ @media (max-width: 481px) {
     .about, .contact, .projects {
         padding: 4px;
     }
-    .about p, .contact p, .projects p{
+    .about p, .contact p, .projects p {
         max-width:100%;
     }
  }
