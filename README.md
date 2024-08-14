@@ -25,3 +25,4 @@ I have conducted extra research to assist with development, the below sources ar
 
 **Media tags:** I research media tags in an attempt to try and ensure my site scaled down to the right size depending on the device, or size of the web browser if it was adjusted.
 https://css-tricks.com/css-media-queries/ and https://stackoverflow.com/questions/23009510/responsive-css-to-display-mobile-version-of-the-webpage
+https://stackoverflow.com/questions/48998231/how-do-you-make-your-website-only-html-and-css-resize-itself-to-fit-mobile-pon
