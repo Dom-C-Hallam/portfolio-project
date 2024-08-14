@@ -238,22 +238,27 @@ footer {
     }
 }
 
+/* Media Tags For Screen Changes*/
+
 @media (max-width:781px) {
     .headername {
         font-size: 6rem;
         padding: 10px;
+        max-width: 100%;
     }
  }
  @media (max-width:581px) {
     .headername {
         font-size: 4rem;
         padding: 10px;
+        max-width: 100%;
     }
  }
  @media (max-width:481px) {
     .headername {
         font-size: 2rem;
         padding: 10px;
+        max-width: 100%;
     }
  }
 
@@ -261,18 +266,21 @@ footer {
     .headertop {
         font-size: 2rem;
         padding: 50px;
+        max-width: 100%;
     }
  }
  @media (max-width:581px) {
     .headertop {
         font-size: 1rem;
         padding: 50px;
+        max-width: 100%;
     }
  }
  @media (max-width:481px) {
     .headertop {
         font-size: 1rem;
         padding: 50px;
+        max-width: 100%;
     }
  }
 
@@ -280,26 +288,49 @@ footer {
     .headerbottom {
         font-size: 2rem;
         padding: 50px;
+        max-width: 100%;
     }
  }
  @media (max-width:581px) {
     .headerbottom {
         font-size: 1rem;
         padding: 50px;
+        max-width: 100%;
     }
  }
  @media (max-width:481px) {
     .headerbottom {
         font-size: 1rem;
         padding: 50px;
+        max-width: 100%;
     }
  }
 
- @media (max-width: 481px) {
+ @media (max-width: 480px) {
     .about, .contact, .projects {
         padding: 4px;
+        max-width: 100%;
     }
     .about p, .contact p, .projects p {
         max-width:100%;
     }
  }
+
+@media (max-width: 480px) {
+    .atmosphere {
+        max-width: 100%;
+        max-height: 100%;
+        position: absolute;
+        height: auto;
+        width: auto\9;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 4px;
+        max-width: 70%;
+        text-align: center;
+        font-size: 0.5rem;
+    }
+}
