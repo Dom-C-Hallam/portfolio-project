@@ -23,10 +23,10 @@ li {
 }
 
 .atmosphere {
-    margin-left: 190px;
     mask-image: linear-gradient(to right, transparent 25%, black);
     position: absolute;
     z-index: 0;
+    width: 100%;
 }
 
 body {
@@ -265,21 +265,22 @@ footer {
  @media (max-width:781px) {
     .headertop {
         font-size: 2rem;
-        padding: 50px;
+        padding-bottom: 70px;
         max-width: 100%;
+
     }
  }
  @media (max-width:581px) {
     .headertop {
         font-size: 1rem;
-        padding: 50px;
+        padding-bottom: 70px;
         max-width: 100%;
     }
  }
  @media (max-width:481px) {
     .headertop {
         font-size: 1rem;
-        padding: 50px;
+        padding-bottom: 70px;
         max-width: 100%;
     }
  }
@@ -287,21 +288,21 @@ footer {
  @media (max-width:781px) {
     .headerbottom {
         font-size: 2rem;
-        padding: 50px;
+        padding-top: 50px;
         max-width: 100%;
     }
  }
  @media (max-width:581px) {
     .headerbottom {
         font-size: 1rem;
-        padding: 50px;
+        padding-top: 50px;
         max-width: 100%;
     }
  }
  @media (max-width:481px) {
     .headerbottom {
         font-size: 1rem;
-        padding: 50px;
+        padding-top: 50px;
         max-width: 100%;
     }
  }
@@ -316,21 +317,35 @@ footer {
     }
  }
 
-@media (max-width: 480px) {
+@media (min-width: 760px) {
     .atmosphere {
-        max-width: 100%;
-        max-height: 100%;
+        /*max-width: 100%;
+        max-height: 100%;*/
         position: absolute;
         height: auto;
         width: auto\9;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 420px) {
+    .atmosphere {
+       display: none;
+    }
+}
+
+@media (max-width: 420px) {
     .navbar {
-        padding: 4px;
-        max-width: 70%;
-        text-align: center;
-        font-size: 0.5rem;
+        /*padding: 4px;*/
+        max-width: 100%;
+        text-align: left;
+        font-size: 5px;
+    }
+}
+@media (max-width: 321px) {
+    .navbar {
+        /*padding: 4px;*/
+        max-width: 100%;
+        text-align: left;
+        font-size: 5px;
     }
 }
